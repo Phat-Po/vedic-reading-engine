@@ -1,0 +1,13 @@
+{
+  "name": "sample-1995",
+  "birth": {
+    "date": "1995-07-21",
+    "time": "11:35:00",
+    "timezone": "Asia/Taipei",
+    "latitude": 25.0378,
+    "longitude": 121.565,
+    "altitude_m": 0
+  },
+  "analysis_type": "natal",
+  "ayanamsa": "lahiri"
+}
