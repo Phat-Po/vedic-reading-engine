@@ -5,6 +5,8 @@ Pipeline: Markdown → styled HTML (inline CJK CSS) → Chrome headless --print-
 
 from __future__ import annotations
 
+import base64
+import re
 import subprocess
 import tempfile
 from pathlib import Path
@@ -256,14 +258,51 @@ body {{
 """
 
 
+def _embed_images(html: str, base_dir: Path) -> str:
+    """Replace local image src paths with base64 data URIs.
+
+    Chrome headless resolves relative paths from the *temp* HTML location,
+    not the original report directory.  Embedding inline side-steps that.
+    """
+    def _replace_src(m: re.Match) -> str:
+        src = m.group(2)
+        # Skip external URLs and already-inline data URIs
+        if src.startswith(("http://", "https://", "data:")):
+            return m.group(0)
+
+        img_path = (base_dir / src).resolve()
+        if not img_path.exists():
+            return m.group(0)  # leave untouched — will show broken-image marker
+
+        raw = img_path.read_bytes()
+        b64 = base64.b64encode(raw).decode("ascii")
+
+        # Map extension → MIME
+        ext = img_path.suffix.lower()
+        mime_map = {
+            ".svg": "image/svg+xml",
+            ".png": "image/png",
+            ".jpg": "image/jpeg",
+            ".jpeg": "image/jpeg",
+            ".gif": "image/gif",
+            ".webp": "image/webp",
+        }
+        mime = mime_map.get(ext, "image/svg+xml")
+        # Preserve everything, only replace the src value
+        return f'{m.group(1)}data:{mime};base64,{b64}{m.group(3)}'
+
+    return re.sub(r'(<img[^>]+src=")([^"]+)(")', _replace_src, html)
+
+
 def md_to_html(md_path: Path) -> str:
-    """Convert a Markdown file to a styled HTML string."""
+    """Convert a Markdown file to a styled HTML string with embedded images."""
     md_text = md_path.read_text(encoding="utf-8")
     html_body = markdown.markdown(
         md_text,
         extensions=["tables", "fenced_code", "smarty"],
         output_format="html",
     )
+    html_body = _embed_images(html_body, md_path.parent)
     return HTML_TEMPLATE.format(content=html_body)
 
 
