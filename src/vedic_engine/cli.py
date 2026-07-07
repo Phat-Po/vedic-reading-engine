@@ -8,6 +8,7 @@ import sys
 from pathlib import Path
 
 from .calculator import VedicCalculator
+from .pdf_exporter import export_pdf
 from .renderer import ChartRenderer
 from .schemas import CalculateRequest
 
@@ -38,6 +39,7 @@ def main() -> None:
 
     # Output control
     parser.add_argument("--json-only", action="store_true", help="Print chart JSON only, no SVG.")
+    parser.add_argument("--pdf", type=Path, help="Convert a report.md to PDF after calculation.")
     parser.add_argument(
         "--output-dir", type=Path,
         default=Path("output"),
@@ -115,3 +117,7 @@ def main() -> None:
     shadbala_path = out / f"{slug}-shadbala.svg"
     shadbala_path.write_text(renderer.shadbala_bar(chart), encoding="utf-8")
     print(f"[svg] {shadbala_path}", file=sys.stderr)
+
+    if args.pdf:
+        pdf_path = export_pdf(args.pdf)
+        print(f"[pdf] {pdf_path}", file=sys.stderr)

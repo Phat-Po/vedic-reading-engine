@@ -8,3 +8,4 @@ __pycache__/
 output/
 ephe/*.se1
 ephe/fixstars.cat
+profiles/*/report.pdf

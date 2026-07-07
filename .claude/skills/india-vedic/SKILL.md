@@ -219,7 +219,7 @@ cp output/chart-dasha.svg "$PROFILES_DIR/$SLUG/charts/dasha.svg"
 在 `profiles/INDEX.md` 表格最上方插入一行：
 
 ```markdown
-| YYYY-MM-DD | [名字](./<slug>/report.md) | 出生日期 | 上升星座 度数 | 月亮星座 度数 | 分析类型 | 当前大运 |
+| YYYY-MM-DD | [名字](./<slug>/report.md) | 出生日期 | 上升星座 度数 | 月亮星座 度数 | 分析类型 | 当前大运 | [PDF](./<slug>/report.pdf) |
 ```
 
 INDEX.md 表格按算盘日期倒序排列（最新的在最上面）。
@@ -229,6 +229,19 @@ INDEX.md 表格按算盘日期倒序排列（最新的在最上面）。
 - 出生日期从 input 中取，格式 YYYY-MM-DD
 - 名字用操作者输入的名字（中文直接用，英文用拼音）
 - 若同一人多次算不同主题，在 slug 后加分析类型：`1997-01-04_徐闹闹_career`
+
+### 8. 生成 PDF
+
+归档完成后，自动将 report.md 转为手机友好 PDF：
+
+```bash
+cd /Volumes/轻松打爆你/VIBE\ CODING/10_PROJECTS_ACTIVE/20260707__tool__vedic-reading
+.venv/bin/vedic-pdf "profiles/<slug>/report.md"
+```
+
+PDF 输出到 `profiles/<slug>/report.pdf`。生成后用 SendUserFile 发送给操作者。
+
+若 Chrome 未安装或 PDF 生成失败，跳过并告知操作者手动运行 `vedic-pdf`。
 
 ## Hard Rules
 
