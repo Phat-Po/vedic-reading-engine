@@ -88,6 +88,7 @@ class VedicCalculator:
             },
             "input": {
                 "name": request.name,
+                "gender": request.gender,
                 "birth_date": birth.date,
                 "birth_time": birth.time,
                 "timezone": birth.timezone,

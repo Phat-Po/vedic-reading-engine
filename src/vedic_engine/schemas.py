@@ -19,6 +19,7 @@ class BirthData(BaseModel):
 class CalculateRequest(BaseModel):
     name: str | None = None
     birth: BirthData
+    gender: Literal["male", "female"] | None = None
     analysis_type: Literal["natal", "dasha", "investment", "relationship", "career", "health", "prashna"] = "natal"
     ayanamsa: Literal["lahiri"] = "lahiri"
     dasha_depth: int = Field(default=2, ge=2, le=4)

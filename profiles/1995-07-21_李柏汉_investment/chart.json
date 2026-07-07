@@ -1,0 +1,1334 @@
+{
+  "meta": {
+    "engine": "vedic-divination-engine",
+    "version": "0.2.0",
+    "swiss_ephemeris_version": "2.10.03",
+    "generated_at": "2026-07-06T21:20:45.206753+00:00",
+    "calculation_time_ms": 6.07,
+    "ephemeris_mode": "swiss"
+  },
+  "input": {
+    "name": "李柏汉",
+    "gender": "male",
+    "birth_date": "1995-07-21",
+    "birth_time": "11:35:00",
+    "timezone": "Asia/Taipei",
+    "utc_offset": "+0800",
+    "latitude": 25.04,
+    "longitude": 121.57,
+    "altitude_m": 0.0
+  },
+  "ayanamsa": {
+    "system": "sidereal",
+    "name": "Lahiri",
+    "value_degrees": 23.794932,
+    "swisseph_constant": "SIDM_LAHIRI"
+  },
+  "panchanga": {
+    "tithi": {
+      "name_sanskrit": "Krishna Dashami",
+      "name_chinese": "暗月初十",
+      "index": 25,
+      "start_degrees": 288.0,
+      "end_degrees": 300.0,
+      "paksha": "krishna",
+      "is_shukla": false
+    },
+    "vara": {
+      "name_sanskrit": "Shukravara",
+      "name_chinese": "金曜日",
+      "index": 6,
+      "planet": "Venus"
+    },
+    "nakshatra": {
+      "name_sanskrit": "Bharani",
+      "name_chinese": "胃宿",
+      "index": 2,
+      "start_degrees": 13.33,
+      "end_degrees": 26.67,
+      "lord": "Venus",
+      "pada": 3
+    },
+    "yoga": {
+      "name_sanskrit": "Shula",
+      "name_chinese": "首罗",
+      "index": 9,
+      "start_degrees": 106.67,
+      "end_degrees": 120.0
+    },
+    "karana": {
+      "name_sanskrit": "Vanija",
+      "name_chinese": "伐尼惹",
+      "index": 49,
+      "start_degrees": 288.0,
+      "end_degrees": 294.0
+    }
+  },
+  "planets": {
+    "sun": {
+      "longitude": 94.13715,
+      "sign": {
+        "index": 4,
+        "name_en": "Cancer",
+        "name_zh": "巨蟹"
+      },
+      "house": 11,
+      "degree_in_sign": 4.13715,
+      "degree_dms": "4°8'",
+      "nakshatra": {
+        "name_en": "Pushya",
+        "name_zh": "鬼宿",
+        "pada": 1,
+        "lord": "Saturn"
+      },
+      "retrograde": false,
+      "speed_per_day": 0.954504,
+      "is_combust": false
+    },
+    "moon": {
+      "longitude": 22.934027,
+      "sign": {
+        "index": 1,
+        "name_en": "Aries",
+        "name_zh": "白羊"
+      },
+      "house": 8,
+      "degree_in_sign": 22.934027,
+      "degree_dms": "22°56'",
+      "nakshatra": {
+        "name_en": "Bharani",
+        "name_zh": "胃宿",
+        "pada": 3,
+        "lord": "Venus"
+      },
+      "retrograde": false,
+      "speed_per_day": 11.946938,
+      "is_waxing": false
+    },
+    "mercury": {
+      "longitude": 86.089322,
+      "sign": {
+        "index": 3,
+        "name_en": "Gemini",
+        "name_zh": "双子"
+      },
+      "house": 10,
+      "degree_in_sign": 26.089322,
+      "degree_dms": "26°5'",
+      "nakshatra": {
+        "name_en": "Punarvasu",
+        "name_zh": "井宿",
+        "pada": 2,
+        "lord": "Jupiter"
+      },
+      "retrograde": false,
+      "speed_per_day": 2.090221
+    },
+    "venus": {
+      "longitude": 85.650996,
+      "sign": {
+        "index": 3,
+        "name_en": "Gemini",
+        "name_zh": "双子"
+      },
+      "house": 10,
+      "degree_in_sign": 25.650996,
+      "degree_dms": "25°39'",
+      "nakshatra": {
+        "name_en": "Punarvasu",
+        "name_zh": "井宿",
+        "pada": 2,
+        "lord": "Jupiter"
+      },
+      "retrograde": false,
+      "speed_per_day": 1.22805
+    },
+    "mars": {
+      "longitude": 156.060897,
+      "sign": {
+        "index": 6,
+        "name_en": "Virgo",
+        "name_zh": "处女"
+      },
+      "house": 1,
+      "degree_in_sign": 6.060897,
+      "degree_dms": "6°4'",
+      "nakshatra": {
+        "name_en": "Uttara Phalguni",
+        "name_zh": "翼宿",
+        "pada": 3,
+        "lord": "Sun"
+      },
+      "retrograde": false,
+      "speed_per_day": 0.588558
+    },
+    "jupiter": {
+      "longitude": 221.974286,
+      "sign": {
+        "index": 8,
+        "name_en": "Scorpio",
+        "name_zh": "天蝎"
+      },
+      "house": 3,
+      "degree_in_sign": 11.974286,
+      "degree_dms": "11°58'",
+      "nakshatra": {
+        "name_en": "Anuradha",
+        "name_zh": "房宿",
+        "pada": 3,
+        "lord": "Saturn"
+      },
+      "retrograde": true,
+      "speed_per_day": -0.038315
+    },
+    "saturn": {
+      "longitude": 330.773015,
+      "sign": {
+        "index": 12,
+        "name_en": "Pisces",
+        "name_zh": "双鱼"
+      },
+      "house": 7,
+      "degree_in_sign": 0.773015,
+      "degree_dms": "0°46'",
+      "nakshatra": {
+        "name_en": "Purva Bhadrapada",
+        "name_zh": "室宿",
+        "pada": 4,
+        "lord": "Jupiter"
+      },
+      "retrograde": true,
+      "speed_per_day": -0.024369
+    },
+    "uranus": {
+      "longitude": 274.721117,
+      "sign": {
+        "index": 10,
+        "name_en": "Capricorn",
+        "name_zh": "摩羯"
+      },
+      "house": 5,
+      "degree_in_sign": 4.721117,
+      "degree_dms": "4°43'",
+      "nakshatra": {
+        "name_en": "Uttara Ashadha",
+        "name_zh": "斗宿",
+        "pada": 3,
+        "lord": "Sun"
+      },
+      "retrograde": true,
+      "speed_per_day": -0.04013
+    },
+    "neptune": {
+      "longitude": 270.258261,
+      "sign": {
+        "index": 10,
+        "name_en": "Capricorn",
+        "name_zh": "摩羯"
+      },
+      "house": 5,
+      "degree_in_sign": 0.258261,
+      "degree_dms": "0°15'",
+      "nakshatra": {
+        "name_en": "Uttara Ashadha",
+        "name_zh": "斗宿",
+        "pada": 2,
+        "lord": "Sun"
+      },
+      "retrograde": true,
+      "speed_per_day": -0.027029
+    },
+    "pluto": {
+      "longitude": 214.111922,
+      "sign": {
+        "index": 8,
+        "name_en": "Scorpio",
+        "name_zh": "天蝎"
+      },
+      "house": 3,
+      "degree_in_sign": 4.111922,
+      "degree_dms": "4°7'",
+      "nakshatra": {
+        "name_en": "Anuradha",
+        "name_zh": "房宿",
+        "pada": 1,
+        "lord": "Saturn"
+      },
+      "retrograde": true,
+      "speed_per_day": -0.009999
+    },
+    "rahu": {
+      "longitude": 187.800907,
+      "sign": {
+        "index": 7,
+        "name_en": "Libra",
+        "name_zh": "天秤"
+      },
+      "house": 2,
+      "degree_in_sign": 7.800907,
+      "degree_dms": "7°48'",
+      "nakshatra": {
+        "name_en": "Swati",
+        "name_zh": "亢宿",
+        "pada": 1,
+        "lord": "Rahu"
+      },
+      "retrograde": true,
+      "speed_per_day": -0.019461,
+      "is_mean_node": false
+    },
+    "ketu": {
+      "longitude": 7.800907,
+      "sign": {
+        "index": 1,
+        "name_en": "Aries",
+        "name_zh": "白羊"
+      },
+      "house": 8,
+      "degree_in_sign": 7.800907,
+      "degree_dms": "7°48'",
+      "nakshatra": {
+        "name_en": "Ashwini",
+        "name_zh": "娄宿",
+        "pada": 3,
+        "lord": "Ketu"
+      },
+      "retrograde": true,
+      "speed_per_day": -0.019461,
+      "is_mean_node": false
+    },
+    "ascendant": {
+      "longitude": 177.651273,
+      "sign": {
+        "index": 6,
+        "name_en": "Virgo",
+        "name_zh": "处女"
+      },
+      "house": 1,
+      "degree_in_sign": 27.651273,
+      "degree_dms": "27°39'",
+      "nakshatra": {
+        "name_en": "Chitra",
+        "name_zh": "角宿",
+        "pada": 2,
+        "lord": "Mars"
+      },
+      "retrograde": false,
+      "speed_per_day": 0.0
+    }
+  },
+  "houses": {
+    "system": "placidus",
+    "cusps": {
+      "1": {
+        "longitude": 177.651273,
+        "sign_index": 6,
+        "sign_name": "Virgo"
+      },
+      "2": {
+        "longitude": 206.632471,
+        "sign_index": 7,
+        "sign_name": "Libra"
+      },
+      "3": {
+        "longitude": 236.944995,
+        "sign_index": 8,
+        "sign_name": "Scorpio"
+      },
+      "4": {
+        "longitude": 268.196497,
+        "sign_index": 9,
+        "sign_name": "Sagittarius"
+      },
+      "5": {
+        "longitude": 299.810222,
+        "sign_index": 10,
+        "sign_name": "Capricorn"
+      },
+      "6": {
+        "longitude": 330.213097,
+        "sign_index": 12,
+        "sign_name": "Pisces"
+      },
+      "7": {
+        "longitude": 357.651273,
+        "sign_index": 12,
+        "sign_name": "Pisces"
+      },
+      "8": {
+        "longitude": 26.632471,
+        "sign_index": 1,
+        "sign_name": "Aries"
+      },
+      "9": {
+        "longitude": 56.944995,
+        "sign_index": 2,
+        "sign_name": "Taurus"
+      },
+      "10": {
+        "longitude": 88.196497,
+        "sign_index": 3,
+        "sign_name": "Gemini"
+      },
+      "11": {
+        "longitude": 119.810222,
+        "sign_index": 4,
+        "sign_name": "Cancer"
+      },
+      "12": {
+        "longitude": 150.213097,
+        "sign_index": 6,
+        "sign_name": "Virgo"
+      }
+    },
+    "bhava_madhya": {},
+    "house_lords": {
+      "1": "Mercury",
+      "2": "Venus",
+      "3": "Mars",
+      "4": "Jupiter",
+      "5": "Saturn",
+      "6": "Saturn",
+      "7": "Jupiter",
+      "8": "Mars",
+      "9": "Venus",
+      "10": "Mercury",
+      "11": "Moon",
+      "12": "Sun"
+    }
+  },
+  "karakas": {
+    "atma": "mercury",
+    "amatya": "venus",
+    "bhratri": "moon",
+    "matri": "jupiter",
+    "putra": "mars",
+    "gnati": "uranus",
+    "dara": "sun"
+  },
+  "yogas": {
+    "detected": [
+      {
+        "name": "Bhadra Yoga",
+        "name_zh": "跋陀罗瑜伽",
+        "category": "pancha-mahapurusha",
+        "detected": true,
+        "strength": "strong",
+        "evidence": "mercury in own/exalted sign in a kendra."
+      },
+      {
+        "name": "Adhi Yoga",
+        "name_zh": "阿迪瑜伽",
+        "category": "support",
+        "detected": true,
+        "strength": "medium",
+        "evidence": "Benefics occupy 6th/7th/8th from Moon."
+      },
+      {
+        "name": "Anapha Yoga",
+        "name_zh": "阿纳帕瑜伽",
+        "category": "restraint",
+        "detected": true,
+        "strength": "medium",
+        "evidence": "A planet other than Sun occupies the 12th from Moon."
+      },
+      {
+        "name": "Amala Yoga",
+        "name_zh": "清净瑜伽",
+        "category": "reputation",
+        "detected": true,
+        "strength": "medium",
+        "evidence": "A benefic occupies the 10th house."
+      },
+      {
+        "name": "Sakata Yoga",
+        "name_zh": "车轮瑜伽",
+        "category": "fluctuation",
+        "detected": true,
+        "strength": "medium",
+        "evidence": "Jupiter is in 6th/8th/12th from Moon."
+      },
+      {
+        "name": "Raja Yoga",
+        "name_zh": "王者瑜伽",
+        "category": "authority",
+        "detected": true,
+        "strength": "contextual",
+        "evidence": "Kendra and trikona lords are connected."
+      },
+      {
+        "name": "Mercury-Venus Conjunction",
+        "name_zh": "水星金星合相",
+        "category": "career/arts",
+        "detected": true,
+        "strength": "medium",
+        "evidence": "Mercury and Venus occupy the same sign."
+      }
+    ]
+  },
+  "shadbala": {
+    "planets": {
+      "sun": {
+        "sthana_bala": 106.95,
+        "dig_bala": 40.0,
+        "kala_bala": 51.87,
+        "chestha_bala": 39.09,
+        "naisargika_bala": 60.0,
+        "drik_bala": 15.0,
+        "total_virupas": 312.91,
+        "total_rupa": 5.22,
+        "meets_minimum": true,
+        "status": "full-calculation",
+        "components_zh": {
+          "sthana_bala": "位置力",
+          "dig_bala": "方向力",
+          "kala_bala": "时间力",
+          "chestha_bala": "运动力",
+          "naisargika_bala": "自然力",
+          "drik_bala": "相位力"
+        },
+        "notes": {
+          "saptavargaja": "saptavargaja-simplified-d1-only",
+          "classical_unit": "virupa; 60 virupas = 1 rupa"
+        }
+      },
+      "moon": {
+        "sthana_bala": 121.64,
+        "dig_bala": 0.0,
+        "kala_bala": 59.37,
+        "chestha_bala": 60.0,
+        "naisargika_bala": 51.43,
+        "drik_bala": -30.0,
+        "total_virupas": 262.44,
+        "total_rupa": 4.37,
+        "meets_minimum": false,
+        "status": "full-calculation",
+        "components_zh": {
+          "sthana_bala": "位置力",
+          "dig_bala": "方向力",
+          "kala_bala": "时间力",
+          "chestha_bala": "运动力",
+          "naisargika_bala": "自然力",
+          "drik_bala": "相位力"
+        },
+        "notes": {
+          "saptavargaja": "saptavargaja-simplified-d1-only",
+          "classical_unit": "virupa; 60 virupas = 1 rupa"
+        }
+      },
+      "mars": {
+        "sthana_bala": 97.69,
+        "dig_bala": 0.0,
+        "kala_bala": 66.87,
+        "chestha_bala": 31.77,
+        "naisargika_bala": 17.14,
+        "drik_bala": -15.0,
+        "total_virupas": 198.47,
+        "total_rupa": 3.31,
+        "meets_minimum": false,
+        "status": "full-calculation",
+        "components_zh": {
+          "sthana_bala": "位置力",
+          "dig_bala": "方向力",
+          "kala_bala": "时间力",
+          "chestha_bala": "运动力",
+          "naisargika_bala": "自然力",
+          "drik_bala": "相位力"
+        },
+        "notes": {
+          "saptavargaja": "saptavargaja-simplified-d1-only",
+          "classical_unit": "virupa; 60 virupas = 1 rupa"
+        }
+      },
+      "mercury": {
+        "sthana_bala": 148.7,
+        "dig_bala": 0.0,
+        "kala_bala": 49.37,
+        "chestha_bala": 24.02,
+        "naisargika_bala": 25.71,
+        "drik_bala": -15.0,
+        "total_virupas": 232.8,
+        "total_rupa": 3.88,
+        "meets_minimum": false,
+        "status": "full-calculation",
+        "components_zh": {
+          "sthana_bala": "位置力",
+          "dig_bala": "方向力",
+          "kala_bala": "时间力",
+          "chestha_bala": "运动力",
+          "naisargika_bala": "自然力",
+          "drik_bala": "相位力"
+        },
+        "notes": {
+          "saptavargaja": "saptavargaja-simplified-d1-only",
+          "classical_unit": "virupa; 60 virupas = 1 rupa"
+        }
+      },
+      "jupiter": {
+        "sthana_bala": 62.68,
+        "dig_bala": 20.0,
+        "kala_bala": 51.87,
+        "chestha_bala": 60.0,
+        "naisargika_bala": 34.29,
+        "drik_bala": 0.0,
+        "total_virupas": 228.83,
+        "total_rupa": 3.81,
+        "meets_minimum": false,
+        "status": "full-calculation",
+        "components_zh": {
+          "sthana_bala": "位置力",
+          "dig_bala": "方向力",
+          "kala_bala": "时间力",
+          "chestha_bala": "运动力",
+          "naisargika_bala": "自然力",
+          "drik_bala": "相位力"
+        },
+        "notes": {
+          "saptavargaja": "saptavargaja-simplified-d1-only",
+          "classical_unit": "virupa; 60 virupas = 1 rupa"
+        }
+      },
+      "venus": {
+        "sthana_bala": 135.45,
+        "dig_bala": 0.0,
+        "kala_bala": 54.37,
+        "chestha_bala": 24.24,
+        "naisargika_bala": 42.86,
+        "drik_bala": -15.0,
+        "total_virupas": 241.92,
+        "total_rupa": 4.03,
+        "meets_minimum": false,
+        "status": "full-calculation",
+        "components_zh": {
+          "sthana_bala": "位置力",
+          "dig_bala": "方向力",
+          "kala_bala": "时间力",
+          "chestha_bala": "运动力",
+          "naisargika_bala": "自然力",
+          "drik_bala": "相位力"
+        },
+        "notes": {
+          "saptavargaja": "saptavargaja-simplified-d1-only",
+          "classical_unit": "virupa; 60 virupas = 1 rupa"
+        }
+      },
+      "saturn": {
+        "sthana_bala": 96.41,
+        "dig_bala": 60.0,
+        "kala_bala": 64.37,
+        "chestha_bala": 60.0,
+        "naisargika_bala": 8.57,
+        "drik_bala": 0.0,
+        "total_virupas": 289.35,
+        "total_rupa": 4.82,
+        "meets_minimum": false,
+        "status": "full-calculation",
+        "components_zh": {
+          "sthana_bala": "位置力",
+          "dig_bala": "方向力",
+          "kala_bala": "时间力",
+          "chestha_bala": "运动力",
+          "naisargika_bala": "自然力",
+          "drik_bala": "相位力"
+        },
+        "notes": {
+          "saptavargaja": "saptavargaja-simplified-d1-only",
+          "classical_unit": "virupa; 60 virupas = 1 rupa"
+        }
+      }
+    },
+    "status": "full-calculation",
+    "unit": "virupa"
+  },
+  "ashtakavarga": {
+    "sarvashtakavarga": {
+      "1": 32,
+      "2": 31,
+      "3": 28,
+      "4": 22,
+      "5": 23,
+      "6": 33,
+      "7": 23,
+      "8": 32,
+      "9": 28,
+      "10": 32,
+      "11": 29,
+      "12": 23
+    },
+    "trikona_shodhana": {
+      "1": 11,
+      "2": 6,
+      "3": 8,
+      "4": 4,
+      "5": 2,
+      "6": 8,
+      "7": 3,
+      "8": 14,
+      "9": 7,
+      "10": 7,
+      "11": 9,
+      "12": 5
+    }
+  },
+  "dashas": {
+    "current": {
+      "planet": "Rahu",
+      "start": "2024-02-24",
+      "end": "2042-02-24",
+      "years": 18,
+      "antardashas": [
+        {
+          "planet": "Rahu",
+          "start": "2024-02-24",
+          "end": "2026-11-07",
+          "years": 2.7,
+          "pratyantar": [
+            {
+              "planet": "Rahu",
+              "start": "2024-02-24",
+              "end": "2024-07-21",
+              "years": 0.405
+            },
+            {
+              "planet": "Jupiter",
+              "start": "2024-07-21",
+              "end": "2024-11-30",
+              "years": 0.36
+            },
+            {
+              "planet": "Saturn",
+              "start": "2024-11-30",
+              "end": "2025-05-05",
+              "years": 0.4275
+            },
+            {
+              "planet": "Mercury",
+              "start": "2025-05-05",
+              "end": "2025-09-22",
+              "years": 0.3825
+            },
+            {
+              "planet": "Ketu",
+              "start": "2025-09-22",
+              "end": "2025-11-18",
+              "years": 0.1575
+            },
+            {
+              "planet": "Venus",
+              "start": "2025-11-18",
+              "end": "2026-05-02",
+              "years": 0.45
+            },
+            {
+              "planet": "Sun",
+              "start": "2026-05-02",
+              "end": "2026-06-20",
+              "years": 0.135
+            },
+            {
+              "planet": "Moon",
+              "start": "2026-06-20",
+              "end": "2026-09-10",
+              "years": 0.225
+            },
+            {
+              "planet": "Mars",
+              "start": "2026-09-10",
+              "end": "2026-11-07",
+              "years": 0.1575
+            }
+          ]
+        },
+        {
+          "planet": "Jupiter",
+          "start": "2026-11-07",
+          "end": "2029-04-01",
+          "years": 2.4,
+          "pratyantar": [
+            {
+              "planet": "Jupiter",
+              "start": "2026-11-07",
+              "end": "2027-03-03",
+              "years": 0.32
+            },
+            {
+              "planet": "Saturn",
+              "start": "2027-03-03",
+              "end": "2027-07-20",
+              "years": 0.38
+            },
+            {
+              "planet": "Mercury",
+              "start": "2027-07-20",
+              "end": "2027-11-21",
+              "years": 0.34
+            },
+            {
+              "planet": "Ketu",
+              "start": "2027-11-21",
+              "end": "2028-01-12",
+              "years": 0.14
+            },
+            {
+              "planet": "Venus",
+              "start": "2028-01-12",
+              "end": "2028-06-06",
+              "years": 0.4
+            },
+            {
+              "planet": "Sun",
+              "start": "2028-06-06",
+              "end": "2028-07-20",
+              "years": 0.12
+            },
+            {
+              "planet": "Moon",
+              "start": "2028-07-20",
+              "end": "2028-10-01",
+              "years": 0.2
+            },
+            {
+              "planet": "Mars",
+              "start": "2028-10-01",
+              "end": "2028-11-21",
+              "years": 0.14
+            },
+            {
+              "planet": "Rahu",
+              "start": "2028-11-21",
+              "end": "2029-04-01",
+              "years": 0.36
+            }
+          ]
+        },
+        {
+          "planet": "Saturn",
+          "start": "2029-04-01",
+          "end": "2032-02-06",
+          "years": 2.85,
+          "pratyantar": [
+            {
+              "planet": "Saturn",
+              "start": "2029-04-01",
+              "end": "2029-09-13",
+              "years": 0.45125
+            },
+            {
+              "planet": "Mercury",
+              "start": "2029-09-13",
+              "end": "2030-02-07",
+              "years": 0.40375
+            },
+            {
+              "planet": "Ketu",
+              "start": "2030-02-07",
+              "end": "2030-04-09",
+              "years": 0.16625
+            },
+            {
+              "planet": "Venus",
+              "start": "2030-04-09",
+              "end": "2030-09-30",
+              "years": 0.475
+            },
+            {
+              "planet": "Sun",
+              "start": "2030-09-30",
+              "end": "2030-11-21",
+              "years": 0.1425
+            },
+            {
+              "planet": "Moon",
+              "start": "2030-11-21",
+              "end": "2031-02-15",
+              "years": 0.2375
+            },
+            {
+              "planet": "Mars",
+              "start": "2031-02-15",
+              "end": "2031-04-17",
+              "years": 0.16625
+            },
+            {
+              "planet": "Rahu",
+              "start": "2031-04-17",
+              "end": "2031-09-20",
+              "years": 0.4275
+            },
+            {
+              "planet": "Jupiter",
+              "start": "2031-09-20",
+              "end": "2032-02-06",
+              "years": 0.38
+            }
+          ]
+        },
+        {
+          "planet": "Mercury",
+          "start": "2032-02-06",
+          "end": "2034-08-26",
+          "years": 2.55,
+          "pratyantar": [
+            {
+              "planet": "Mercury",
+              "start": "2032-02-06",
+              "end": "2032-06-17",
+              "years": 0.36125
+            },
+            {
+              "planet": "Ketu",
+              "start": "2032-06-17",
+              "end": "2032-08-10",
+              "years": 0.14875
+            },
+            {
+              "planet": "Venus",
+              "start": "2032-08-10",
+              "end": "2033-01-13",
+              "years": 0.425
+            },
+            {
+              "planet": "Sun",
+              "start": "2033-01-13",
+              "end": "2033-02-28",
+              "years": 0.1275
+            },
+            {
+              "planet": "Moon",
+              "start": "2033-02-28",
+              "end": "2033-05-17",
+              "years": 0.2125
+            },
+            {
+              "planet": "Mars",
+              "start": "2033-05-17",
+              "end": "2033-07-10",
+              "years": 0.14875
+            },
+            {
+              "planet": "Rahu",
+              "start": "2033-07-10",
+              "end": "2033-11-27",
+              "years": 0.3825
+            },
+            {
+              "planet": "Jupiter",
+              "start": "2033-11-27",
+              "end": "2034-03-31",
+              "years": 0.34
+            },
+            {
+              "planet": "Saturn",
+              "start": "2034-03-31",
+              "end": "2034-08-26",
+              "years": 0.40375
+            }
+          ]
+        },
+        {
+          "planet": "Ketu",
+          "start": "2034-08-26",
+          "end": "2035-09-13",
+          "years": 1.05,
+          "pratyantar": [
+            {
+              "planet": "Ketu",
+              "start": "2034-08-26",
+              "end": "2034-09-17",
+              "years": 0.06125
+            },
+            {
+              "planet": "Venus",
+              "start": "2034-09-17",
+              "end": "2034-11-20",
+              "years": 0.175
+            },
+            {
+              "planet": "Sun",
+              "start": "2034-11-20",
+              "end": "2034-12-09",
+              "years": 0.0525
+            },
+            {
+              "planet": "Moon",
+              "start": "2034-12-09",
+              "end": "2035-01-10",
+              "years": 0.0875
+            },
+            {
+              "planet": "Mars",
+              "start": "2035-01-10",
+              "end": "2035-02-01",
+              "years": 0.06125
+            },
+            {
+              "planet": "Rahu",
+              "start": "2035-02-01",
+              "end": "2035-03-31",
+              "years": 0.1575
+            },
+            {
+              "planet": "Jupiter",
+              "start": "2035-03-31",
+              "end": "2035-05-21",
+              "years": 0.14
+            },
+            {
+              "planet": "Saturn",
+              "start": "2035-05-21",
+              "end": "2035-07-21",
+              "years": 0.16625
+            },
+            {
+              "planet": "Mercury",
+              "start": "2035-07-21",
+              "end": "2035-09-13",
+              "years": 0.14875
+            }
+          ]
+        },
+        {
+          "planet": "Venus",
+          "start": "2035-09-13",
+          "end": "2038-09-13",
+          "years": 3.0,
+          "pratyantar": [
+            {
+              "planet": "Venus",
+              "start": "2035-09-13",
+              "end": "2036-03-14",
+              "years": 0.5
+            },
+            {
+              "planet": "Sun",
+              "start": "2036-03-14",
+              "end": "2036-05-07",
+              "years": 0.15
+            },
+            {
+              "planet": "Moon",
+              "start": "2036-05-07",
+              "end": "2036-08-07",
+              "years": 0.25
+            },
+            {
+              "planet": "Mars",
+              "start": "2036-08-07",
+              "end": "2036-10-10",
+              "years": 0.175
+            },
+            {
+              "planet": "Rahu",
+              "start": "2036-10-10",
+              "end": "2037-03-23",
+              "years": 0.45
+            },
+            {
+              "planet": "Jupiter",
+              "start": "2037-03-23",
+              "end": "2037-08-16",
+              "years": 0.4
+            },
+            {
+              "planet": "Saturn",
+              "start": "2037-08-16",
+              "end": "2038-02-06",
+              "years": 0.475
+            },
+            {
+              "planet": "Mercury",
+              "start": "2038-02-06",
+              "end": "2038-07-11",
+              "years": 0.425
+            },
+            {
+              "planet": "Ketu",
+              "start": "2038-07-11",
+              "end": "2038-09-13",
+              "years": 0.175
+            }
+          ]
+        },
+        {
+          "planet": "Sun",
+          "start": "2038-09-13",
+          "end": "2039-08-08",
+          "years": 0.9,
+          "pratyantar": [
+            {
+              "planet": "Sun",
+              "start": "2038-09-13",
+              "end": "2038-09-29",
+              "years": 0.045
+            },
+            {
+              "planet": "Moon",
+              "start": "2038-09-29",
+              "end": "2038-10-27",
+              "years": 0.075
+            },
+            {
+              "planet": "Mars",
+              "start": "2038-10-27",
+              "end": "2038-11-15",
+              "years": 0.0525
+            },
+            {
+              "planet": "Rahu",
+              "start": "2038-11-15",
+              "end": "2039-01-03",
+              "years": 0.135
+            },
+            {
+              "planet": "Jupiter",
+              "start": "2039-01-03",
+              "end": "2039-02-16",
+              "years": 0.12
+            },
+            {
+              "planet": "Saturn",
+              "start": "2039-02-16",
+              "end": "2039-04-09",
+              "years": 0.1425
+            },
+            {
+              "planet": "Mercury",
+              "start": "2039-04-09",
+              "end": "2039-05-26",
+              "years": 0.1275
+            },
+            {
+              "planet": "Ketu",
+              "start": "2039-05-26",
+              "end": "2039-06-14",
+              "years": 0.0525
+            },
+            {
+              "planet": "Venus",
+              "start": "2039-06-14",
+              "end": "2039-08-08",
+              "years": 0.15
+            }
+          ]
+        },
+        {
+          "planet": "Moon",
+          "start": "2039-08-08",
+          "end": "2041-02-05",
+          "years": 1.5,
+          "pratyantar": [
+            {
+              "planet": "Moon",
+              "start": "2039-08-08",
+              "end": "2039-09-22",
+              "years": 0.125
+            },
+            {
+              "planet": "Mars",
+              "start": "2039-09-22",
+              "end": "2039-10-24",
+              "years": 0.0875
+            },
+            {
+              "planet": "Rahu",
+              "start": "2039-10-24",
+              "end": "2040-01-14",
+              "years": 0.225
+            },
+            {
+              "planet": "Jupiter",
+              "start": "2040-01-14",
+              "end": "2040-03-27",
+              "years": 0.2
+            },
+            {
+              "planet": "Saturn",
+              "start": "2040-03-27",
+              "end": "2040-06-22",
+              "years": 0.2375
+            },
+            {
+              "planet": "Mercury",
+              "start": "2040-06-22",
+              "end": "2040-09-08",
+              "years": 0.2125
+            },
+            {
+              "planet": "Ketu",
+              "start": "2040-09-08",
+              "end": "2040-10-10",
+              "years": 0.0875
+            },
+            {
+              "planet": "Venus",
+              "start": "2040-10-10",
+              "end": "2041-01-09",
+              "years": 0.25
+            },
+            {
+              "planet": "Sun",
+              "start": "2041-01-09",
+              "end": "2041-02-05",
+              "years": 0.075
+            }
+          ]
+        },
+        {
+          "planet": "Mars",
+          "start": "2041-02-05",
+          "end": "2042-02-24",
+          "years": 1.05,
+          "pratyantar": [
+            {
+              "planet": "Mars",
+              "start": "2041-02-05",
+              "end": "2041-02-28",
+              "years": 0.06125
+            },
+            {
+              "planet": "Rahu",
+              "start": "2041-02-28",
+              "end": "2041-04-26",
+              "years": 0.1575
+            },
+            {
+              "planet": "Jupiter",
+              "start": "2041-04-26",
+              "end": "2041-06-16",
+              "years": 0.14
+            },
+            {
+              "planet": "Saturn",
+              "start": "2041-06-16",
+              "end": "2041-08-16",
+              "years": 0.16625
+            },
+            {
+              "planet": "Mercury",
+              "start": "2041-08-16",
+              "end": "2041-10-09",
+              "years": 0.14875
+            },
+            {
+              "planet": "Ketu",
+              "start": "2041-10-09",
+              "end": "2041-11-01",
+              "years": 0.06125
+            },
+            {
+              "planet": "Venus",
+              "start": "2041-11-01",
+              "end": "2042-01-04",
+              "years": 0.175
+            },
+            {
+              "planet": "Sun",
+              "start": "2042-01-04",
+              "end": "2042-01-23",
+              "years": 0.0525
+            },
+            {
+              "planet": "Moon",
+              "start": "2042-01-23",
+              "end": "2042-02-24",
+              "years": 0.0875
+            }
+          ]
+        }
+      ]
+    },
+    "periods": [
+      {
+        "planet": "Venus",
+        "start": "1981-02-24",
+        "end": "2001-02-24"
+      },
+      {
+        "planet": "Sun",
+        "start": "2001-02-24",
+        "end": "2007-02-24"
+      },
+      {
+        "planet": "Moon",
+        "start": "2007-02-24",
+        "end": "2017-02-24"
+      },
+      {
+        "planet": "Mars",
+        "start": "2017-02-24",
+        "end": "2024-02-24"
+      },
+      {
+        "planet": "Rahu",
+        "start": "2024-02-24",
+        "end": "2042-02-24"
+      },
+      {
+        "planet": "Jupiter",
+        "start": "2042-02-24",
+        "end": "2058-02-24"
+      },
+      {
+        "planet": "Saturn",
+        "start": "2058-02-24",
+        "end": "2077-02-24"
+      },
+      {
+        "planet": "Mercury",
+        "start": "2077-02-24",
+        "end": "2094-02-24"
+      },
+      {
+        "planet": "Ketu",
+        "start": "2094-02-24",
+        "end": "2101-02-25"
+      },
+      {
+        "planet": "Venus",
+        "start": "2101-02-25",
+        "end": "2121-02-25"
+      },
+      {
+        "planet": "Sun",
+        "start": "2121-02-25",
+        "end": "2127-02-25"
+      },
+      {
+        "planet": "Moon",
+        "start": "2127-02-25",
+        "end": "2137-02-25"
+      },
+      {
+        "planet": "Mars",
+        "start": "2137-02-25",
+        "end": "2144-02-25"
+      },
+      {
+        "planet": "Rahu",
+        "start": "2144-02-25",
+        "end": "2162-02-25"
+      },
+      {
+        "planet": "Jupiter",
+        "start": "2162-02-25",
+        "end": "2178-02-25"
+      },
+      {
+        "planet": "Saturn",
+        "start": "2178-02-25",
+        "end": "2197-02-25"
+      },
+      {
+        "planet": "Mercury",
+        "start": "2197-02-25",
+        "end": "2214-02-26"
+      },
+      {
+        "planet": "Ketu",
+        "start": "2214-02-26",
+        "end": "2221-02-26"
+      }
+    ],
+    "vimshottari_start": null
+  }
+}
