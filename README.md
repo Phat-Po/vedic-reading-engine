@@ -10,9 +10,25 @@
 
 This repository is for builders who want a local-first Jyotish engine they can run as a CLI, API, or agent skill without turning the core chart calculation into a black-box SaaS dependency.
 
+中文入口： [README.zh.md](README.zh.md)
+
 ---
 
 ## Quick Start
+
+### Option 1. Send This To Your AI Agent
+
+Copy this into Codex, Claude Code, or another coding agent:
+
+```text
+Clone this repository, read README.md first, then follow ONBOARDING_PROMPT.md. Install dependencies, run the primary smoke test, start the main entrypoint, and tell me exactly how to verify the project is working. Use the simplest supported setup path first. If setup fails, stop at the first concrete blocker and report it clearly.
+```
+
+Direct prompt file:
+
+- [ONBOARDING_PROMPT.md](ONBOARDING_PROMPT.md)
+
+### Option 2. Manual Setup
 
 ```bash
 python3.12 -m venv .venv
@@ -199,6 +215,8 @@ These files are intentionally not tracked in git. Keep them local.
 
 ## Docs Map
 
+- [README.zh.md](README.zh.md): Chinese entry
+- [ONBOARDING_PROMPT.md](ONBOARDING_PROMPT.md): copy-paste prompt for AI-agent-assisted setup
 - [SETUP.md](SETUP.md): install and first-run guide
 - [docs/INDEX.md](docs/INDEX.md): documentation hub
 - [CONTRIBUTING.md](CONTRIBUTING.md): development workflow and local-only artifact boundaries
