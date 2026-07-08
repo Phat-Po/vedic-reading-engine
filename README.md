@@ -35,7 +35,7 @@ Recommended first test:
 2. Open `http://127.0.0.1:8000/docs` and call `GET /api/v1/health`.
 3. Add Swiss Ephemeris files to `ephe/` if you want full local ephemeris mode instead of fallback Moshier mode.
 
-For a step-by-step setup path, see [SETUP.md](/Volumes/轻松打爆你/VIBE CODING/10_PROJECTS_ACTIVE/20260707__tool__vedic-reading/SETUP.md).
+For a step-by-step setup path, see [SETUP.md](SETUP.md).
 
 ---
 
@@ -64,7 +64,7 @@ This repo is designed to sit in the middle: deterministic calculation first, the
 - Deterministic Vedic chart calculation with Lahiri ayanamsa by default
 - South Indian, North Indian, East Indian, dasha, and shadbala SVG rendering
 - FastAPI endpoints for calculate, chart, dasha, transit, interpret, and full reading flows
-- Offline interpretation constrained by [RULES.md](/Volumes/轻松打爆你/VIBE CODING/10_PROJECTS_ACTIVE/20260707__tool__vedic-reading/RULES.md)
+- Offline interpretation constrained by [RULES.md](RULES.md)
 - Local CLI entrypoints for chart generation and PDF export
 - Dual skill packaging for `.claude/` and `.agents/` compatibility
 
@@ -111,12 +111,12 @@ Run a direct chart calculation:
 
 ```bash
 vedic-calculate \
-  --date 1995-07-21 \
-  --time 11:35:00 \
-  --tz Asia/Taipei \
-  --lat 25.0378 \
-  --lon 121.5650 \
-  --gender male \
+  --date 1992-11-03 \
+  --time 06:20:00 \
+  --tz Asia/Singapore \
+  --lat 1.3521 \
+  --lon 103.8198 \
+  --gender female \
   --type natal \
   --depth 3 \
   --output-dir output
@@ -156,7 +156,7 @@ This repo ships the same `india-vedic` skill in two layouts for compatibility:
 After copying the matching folder into your own agent skills directory, the agent can accept prompts such as:
 
 - `帮我看这个 Vedic 本命盘`
-- `1995-07-21 11:35 台北 男，重点看事业`
+- `1992-11-03 06:20 新加坡 女，重点看事业`
 - `Run a Vedic relationship reading for 1993-02-04 08:00 Asia/Shanghai`
 
 The skill expects a local installation of this repo and uses the existing `vedic-calculate` CLI plus the repository's anti-contamination rules.
@@ -199,12 +199,12 @@ These files are intentionally not tracked in git. Keep them local.
 
 ## Docs Map
 
-- [SETUP.md](/Volumes/轻松打爆你/VIBE CODING/10_PROJECTS_ACTIVE/20260707__tool__vedic-reading/SETUP.md): install and first-run guide
-- [docs/INDEX.md](/Volumes/轻松打爆你/VIBE CODING/10_PROJECTS_ACTIVE/20260707__tool__vedic-reading/docs/INDEX.md): documentation index
-- [CONTRIBUTING.md](/Volumes/轻松打爆你/VIBE CODING/10_PROJECTS_ACTIVE/20260707__tool__vedic-reading/CONTRIBUTING.md): development and local-only artifact boundaries
-- [RULES.md](/Volumes/轻松打爆你/VIBE CODING/10_PROJECTS_ACTIVE/20260707__tool__vedic-reading/RULES.md): anti-contamination rules for interpretation
-- [tasks/OPEN-SOURCE-RELEASE.md](/Volumes/轻松打爆你/VIBE CODING/10_PROJECTS_ACTIVE/20260707__tool__vedic-reading/tasks/OPEN-SOURCE-RELEASE.md): GitHub release metadata and boundary notes
-- [tasks/ARCHITECTURE.md](/Volumes/轻松打爆你/VIBE CODING/10_PROJECTS_ACTIVE/20260707__tool__vedic-reading/tasks/ARCHITECTURE.md): architecture notes
+- [SETUP.md](SETUP.md): install and first-run guide
+- [docs/INDEX.md](docs/INDEX.md): documentation hub
+- [CONTRIBUTING.md](CONTRIBUTING.md): development workflow and local-only artifact boundaries
+- [RULES.md](RULES.md): anti-contamination rules for interpretation output
+
+Maintainer-oriented planning artifacts remain under `tasks/` and are not part of the primary user-facing docs path.
 
 ---
 
@@ -250,7 +250,7 @@ tasks/                    # planning and release artifacts
 → Confirm Chrome is installed at the expected local path used by the exporter.
 
 **Agent skill runs but produces over-specific conclusions**
-→ Check [RULES.md](/Volumes/轻松打爆你/VIBE CODING/10_PROJECTS_ACTIVE/20260707__tool__vedic-reading/RULES.md); the interpretation layer should only use chart data.
+→ Check [RULES.md](RULES.md); the interpretation layer should only use chart data.
 
 ---
 

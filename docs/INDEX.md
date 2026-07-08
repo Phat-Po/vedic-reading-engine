@@ -2,18 +2,20 @@
 
 ## Start Here
 
-- [README.md](/Volumes/轻松打爆你/VIBE CODING/10_PROJECTS_ACTIVE/20260707__tool__vedic-reading/README.md) — public landing page and product overview
-- [SETUP.md](/Volumes/轻松打爆你/VIBE CODING/10_PROJECTS_ACTIVE/20260707__tool__vedic-reading/SETUP.md) — install and first-run guide
-- [CONTRIBUTING.md](/Volumes/轻松打爆你/VIBE CODING/10_PROJECTS_ACTIVE/20260707__tool__vedic-reading/CONTRIBUTING.md) — development and local-only artifact boundaries
+- [README.md](../README.md) — public landing page and product overview
+- [SETUP.md](../SETUP.md) — install and first-run guide
+- [CONTRIBUTING.md](../CONTRIBUTING.md) — development workflow and local-only artifact boundaries
 
-## Product And Governance
+## Core Reference
 
-- [RULES.md](/Volumes/轻松打爆你/VIBE CODING/10_PROJECTS_ACTIVE/20260707__tool__vedic-reading/RULES.md) — anti-contamination rules
-- [AGENTS.md](/Volumes/轻松打爆你/VIBE CODING/10_PROJECTS_ACTIVE/20260707__tool__vedic-reading/AGENTS.md) — project governance
-- [tasks/OPEN-SOURCE-RELEASE.md](/Volumes/轻松打爆你/VIBE CODING/10_PROJECTS_ACTIVE/20260707__tool__vedic-reading/tasks/OPEN-SOURCE-RELEASE.md) — release notes and GitHub metadata
+- [RULES.md](../RULES.md) — anti-contamination rules
+- [AGENTS.md](../AGENTS.md) — project governance and constraints
 
-## Deeper Technical Notes
+## Maintainer Notes
 
-- [tasks/ARCHITECTURE.md](/Volumes/轻松打爆你/VIBE CODING/10_PROJECTS_ACTIVE/20260707__tool__vedic-reading/tasks/ARCHITECTURE.md) — architecture notes
-- [tasks/DATA-SCHEMA.md](/Volumes/轻松打爆你/VIBE CODING/10_PROJECTS_ACTIVE/20260707__tool__vedic-reading/tasks/DATA-SCHEMA.md) — chart data shape
-- [tasks/BUILD-REPORT.md](/Volumes/轻松打爆你/VIBE CODING/10_PROJECTS_ACTIVE/20260707__tool__vedic-reading/tasks/BUILD-REPORT.md) — build notes
+These files are useful for maintainers and deeper repo context, but they are not the primary onboarding path for first-time users.
+
+- [tasks/ARCHITECTURE.md](../tasks/ARCHITECTURE.md) — architecture notes
+- [tasks/DATA-SCHEMA.md](../tasks/DATA-SCHEMA.md) — chart data shape
+- [tasks/BUILD-REPORT.md](../tasks/BUILD-REPORT.md) — build notes
+- [tasks/OPEN-SOURCE-RELEASE.md](../tasks/OPEN-SOURCE-RELEASE.md) — GitHub release metadata and publication notes
