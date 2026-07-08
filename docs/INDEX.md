@@ -4,7 +4,7 @@
 
 - [README.md](../README.md) — public landing page and product overview
 - [README.zh.md](../README.zh.md) — Chinese entry
-- [ONBOARDING_PROMPT.md](../ONBOARDING_PROMPT.md) — copy-paste prompt for AI-agent-assisted setup
+- [ONBOARDING_PROMPT.md](../ONBOARDING_PROMPT.md) — executable agent brief for install, smoke test, API start, and verification
 - [SETUP.md](../SETUP.md) — install and first-run guide
 - [CONTRIBUTING.md](../CONTRIBUTING.md) — development workflow and local-only artifact boundaries
 

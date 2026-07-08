@@ -12,10 +12,36 @@
 
 ### 方式 1. Send This To Your AI Agent
 
+适合你想让 agent 直接把仓库跑起来，而不是只做一段泛泛介绍。这个入口的目标应该是：安装、验证、启动、回报结果。
+
 把下面这段直接发给 Codex、Claude Code 或其他 coding agent：
 
 ```text
-Clone this repository, read README.md first, then follow ONBOARDING_PROMPT.md. Install dependencies, run the primary smoke test, start the main entrypoint, and tell me exactly how to verify the project is working. Use the simplest supported setup path first. If setup fails, stop at the first concrete blocker and report it clearly.
+You are onboarding this repository for local use.
+
+Your job is to get the project running locally with the simplest supported path, verify the main flows, and report the exact result.
+
+Read README.md first. Then read ONBOARDING_PROMPT.md, SETUP.md, and docs/INDEX.md if they exist. Install dependencies, run the main test path, run the sample CLI flow, start the API, and verify the project is working.
+
+Minimum success target:
+- `pip install -e ".[dev]"`
+- `pytest`
+- `vedic-calculate --sample`
+- `uvicorn vedic_engine.api:app --reload`
+- verify `http://127.0.0.1:8000/docs` or `GET /api/v1/health`
+
+Rules:
+- use the simplest supported setup path first
+- do not assume secrets are needed unless the docs say so
+- do not rewrite project code unless blocked by a concrete setup issue
+- stop at the first real blocker and report it precisely
+
+Required final output:
+- exact commands run
+- pass/fail status for each step
+- exact human verification steps
+- missing optional assets, if any
+- first blocker only, with exact error text, if setup fails
 ```
 
 直接复制的 prompt 文件：
