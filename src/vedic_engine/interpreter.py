@@ -5,7 +5,7 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any
 
-from .utils import experiment_root, package_root
+from .utils import package_root
 
 FORBIDDEN_CONTEXT_TERMS = [
     "Shopee",
@@ -22,7 +22,7 @@ FORBIDDEN_CONTEXT_TERMS = [
 class InterpretationEngine:
     def __init__(self, templates_dir: str | Path | None = None, rules_path: str | Path | None = None) -> None:
         self.templates_dir = Path(templates_dir) if templates_dir else package_root() / "templates"
-        self.rules_path = Path(rules_path) if rules_path else experiment_root() / "RULES.md"
+        self.rules_path = Path(rules_path) if rules_path else package_root() / "RULES.md"
         self.rules = self.rules_path.read_text(encoding="utf-8") if self.rules_path.exists() else ""
 
     def build_prompt(self, chart: dict[str, Any], analysis_type: str = "natal") -> str:

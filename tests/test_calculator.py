@@ -61,7 +61,9 @@ def test_svg_renderers_return_svg() -> None:
 
 def test_interpreter_offline_report_is_rule_bound() -> None:
     chart = VedicCalculator().calculate(load_fixture())
-    report = InterpretationEngine().interpret_offline(chart, "natal")
+    engine = InterpretationEngine()
+    report = engine.interpret_offline(chart, "natal")
+    assert "核心原则" in engine.rules
     assert "offline report uses only chart data" in report
     assert "Shopee" not in report
     assert "Amazon" not in report
