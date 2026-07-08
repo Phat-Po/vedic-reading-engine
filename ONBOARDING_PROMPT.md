@@ -3,16 +3,29 @@
 Send this to your AI agent:
 
 ```text
-You are onboarding this repository for local use.
+Set up and verify this repository from scratch.
+
+Repository:
+- Name: Vedic Reading Engine
+- GitHub: https://github.com/Phat-Po/vedic-reading-engine
+- After cloning, work inside the repository root
+
+Project type:
+- Self-hosted Vedic astrology / Jyotish engine
+- Main surfaces: Python package, CLI, FastAPI API, and agent skill integration
+- Primary entrypoints:
+  - `vedic-calculate`
+  - `uvicorn vedic_engine.api:app --reload`
 
 Your job is not to explain the repo in abstract terms. Your job is to get the project running locally with the simplest supported path, verify the main flows, and report the exact result.
 
 Repository instructions:
-1. Read README.md first.
-2. Then read ONBOARDING_PROMPT.md, SETUP.md, and docs/INDEX.md if they exist.
-3. Do not assume secrets are required unless the docs explicitly say so.
-4. Do not refactor or rewrite project code unless setup is blocked by a concrete fix that is clearly necessary.
-5. Stop at the first real blocker and report it precisely.
+1. Clone the repository.
+2. Read README.md first.
+3. Then read ONBOARDING_PROMPT.md, SETUP.md, and docs/INDEX.md if they exist.
+4. Do not assume secrets are required unless the docs explicitly say so.
+5. Do not refactor or rewrite project code unless setup is blocked by a concrete fix that is clearly necessary.
+6. Stop at the first real blocker and report it precisely.
 
 Execution task:
 1. Install the project with the simplest supported local setup path.
@@ -45,18 +58,20 @@ Required final output:
 Important project-specific notes:
 - Moshier fallback mode is acceptable if Swiss Ephemeris files are missing
 - do not invent a cloud dependency
+- `RULES.md` defines interpretation boundaries and should not be ignored
 - do not ask the operator vague questions if the repo already documents the next step
 ```
 
 ## Expected Flow
 
-1. Read `README.md`
-2. Read `SETUP.md`
-3. Install dependencies in a local virtualenv
-4. Run `pytest`
-5. Run `vedic-calculate --sample`
-6. Start `uvicorn vedic_engine.api:app --reload`
-7. Confirm `http://127.0.0.1:8000/docs` or `GET /api/v1/health`
+1. Clone the repository and enter the repo root
+2. Read `README.md`
+3. Read `SETUP.md`
+4. Install dependencies in a local virtualenv
+5. Run `pytest`
+6. Run `vedic-calculate --sample`
+7. Start `uvicorn vedic_engine.api:app --reload`
+8. Confirm `http://127.0.0.1:8000/docs` or `GET /api/v1/health`
 
 ## Notes
 

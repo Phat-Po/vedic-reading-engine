@@ -17,11 +17,23 @@
 把下面这段直接发给 Codex、Claude Code 或其他 coding agent：
 
 ```text
-You are onboarding this repository for local use.
+Set up and verify this repository from scratch.
+
+Repository:
+- Name: Vedic Reading Engine
+- GitHub: https://github.com/Phat-Po/vedic-reading-engine
+- After cloning, work inside the repository root
+
+Project type:
+- Self-hosted Vedic astrology / Jyotish engine
+- Main surfaces: Python package, CLI, FastAPI API, and agent skill integration
+- Primary entrypoints:
+  - `vedic-calculate`
+  - `uvicorn vedic_engine.api:app --reload`
 
 Your job is to get the project running locally with the simplest supported path, verify the main flows, and report the exact result.
 
-Read README.md first. Then read ONBOARDING_PROMPT.md, SETUP.md, and docs/INDEX.md if they exist. Install dependencies, run the main test path, run the sample CLI flow, start the API, and verify the project is working.
+Clone the repository first. Then read README.md. Then read ONBOARDING_PROMPT.md, SETUP.md, and docs/INDEX.md if they exist. Install dependencies, run the main test path, run the sample CLI flow, start the API, and verify the project is working.
 
 Minimum success target:
 - `pip install -e ".[dev]"`
@@ -34,6 +46,7 @@ Rules:
 - use the simplest supported setup path first
 - do not assume secrets are needed unless the docs say so
 - do not rewrite project code unless blocked by a concrete setup issue
+- respect `RULES.md` if interpretation boundaries matter
 - stop at the first real blocker and report it precisely
 
 Required final output:
